@@ -3,3 +3,51 @@
     padding: 0;
     box-sizing: border-box;
 }
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+}
+.navbar ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    list-style: none;
+    margin: 10px 0px;
+}
+.navbar ul li{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 30px;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 20px 20px 0;
+    border-radius: 5%;
+}
+.navbar ul li:last-child{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+@media (min-width: 576px) {
+    .navbar ul{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 20px 0;
+    }
+    .navbar ul li a{
+        padding: 5px 10px;
+    }
+    .navbar ul li:last-child{
+        grid-column-start: 5;
+        grid-column-end: 6;
+    }
+}
