@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #253237ee;
     position: sticky;
 }
 .navbar ul{
@@ -24,21 +24,49 @@
 }
 .navbar ul li a{
     text-decoration: none;
-    color: white;
+    color: silver;
     padding: 5px 30px;
     transition: all .5s ease;
 }
 .navbar ul li a:hover{
-    background-color: white;
-    color: black;
-    box-shadow: 0 20px 20px 0;
+    background-color: silver;
+    color: #051205;
+    box-shadow: 20px 20px 20px 0;
     border-radius: 5%;
 }
 .navbar ul li:last-child{
     grid-column-start: 1;
     grid-column-end: 3;
 }
-@media (min-width: 576px) {
+#home{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(80deg, #051205 7%, #5c6b73, silver 15%, #5c6b73 20%, #05121a 35%);
+    min-height: 90vh;
+}
+.main{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    color: silver;
+}
+.headings {
+    padding: 10px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.main h1 {
+    font-size: 34px;
+}
+.main img {
+    width: 150px;
+    height: 150px;
+    box-shadow: 20px 20px 20px 0;
+    border-radius: 5%;
+}
+@media (min-width: 568px) {
     .navbar ul{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     margin: 20px 0;
@@ -49,5 +77,60 @@
     .navbar ul li:last-child{
         grid-column-start: 5;
         grid-column-end: 6;
+    }
+    #home{
+        min-height: 95vh;
+    }
+    .main{
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        color: silver;
+    }
+    .headings {
+        margin: 100px;
+    }
+    .main img {
+        width: 150px;
+        height: 150px;
+        box-shadow: 20px 20px 20px 0;
+        border-radius: 5%;
+    }
+}
+@media (min-width: 768px) {
+    .headings {
+        margin: 120px;
+    }
+    .main h1 {
+        font-size: 50px;
+    }
+    .main h2 {
+        font-size: 30px;
+    }
+    .main i {
+        font-size: 25px;
+    }
+    .main img {
+        width: 200px;
+        height: 200px;
+    }
+}
+@media (min-width: 992px) {
+    .headings {
+        margin-top: 300px;
+    }
+    .main h1 {
+        font-size: 80px;
+    }
+    .main h2 {
+        font-size: 50px;
+    }
+    .main i {
+        font-size: 30px;
+    }
+    .main img {
+        margin-top: 150px;
+        width: 250px;
+        height: 250px;
     }
 }
