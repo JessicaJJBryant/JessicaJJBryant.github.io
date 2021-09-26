@@ -146,3 +146,8 @@
         height: 250px;
     }
 }
+@media (min-width: 1400px) {
+    .main{
+        justify-content: space-evenly;
+    }
+}
