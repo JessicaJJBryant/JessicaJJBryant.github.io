@@ -8,11 +8,12 @@
 /* Navigation Bar */
 
 .navbar{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #05121add;
-    position: sticky;
+    background-color: #05121a77;
+    position: fixed;
     margin: auto;
 }
 
@@ -39,7 +40,7 @@
 .navbar a:focus{
     background-color: #05121a77;
     box-shadow: 20px 20px 20px 0;
-    border-radius: 5%;
+    border-radius: 15%;
 }
 
 .navbar li:last-child{
