@@ -48,7 +48,7 @@
 }
 
 /* Main */
-.main{
+main{
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
@@ -79,16 +79,16 @@
     }
 }
 
-.headings {
+main .headings {
     margin-bottom: 20px;
     text-align: center;
 }
 
-.main h1 {
+main h1 {
     font-size: 34px;
 }
 
-.main img {
+main img {
     width: 150px;
     height: 150px;
     box-shadow: 20px 20px 20px 0;
@@ -112,7 +112,7 @@
         grid-column-start: 5;
         grid-column-end: 6;
     }
-    .main{
+    main{
         min-height: 95vh;
         flex-direction: row;
         justify-content: space-evenly;
@@ -120,7 +120,7 @@
         color: silver;
         margin-bottom: 0;
     }
-    .main img {
+    main img {
         width: 150px;
         height: 150px;
         box-shadow: 20px 20px 20px 0;
@@ -128,37 +128,37 @@
     }
 }
 @media (min-width: 768px) {
-    .main h1 {
+    main h1 {
         font-size: 50px;
     }
-    .main h2 {
+    main h2 {
         font-size: 30px;
     }
-    .main i {
+    main i {
         font-size: 25px;
     }
-    .main img {
+    main img {
         width: 200px;
         height: 200px;
     }
 }
 @media (min-width: 992px) {
-    .main h1 {
+    main h1 {
         font-size: 80px;
     }
-    .main h2 {
+    main h2 {
         font-size: 50px;
     }
-    .main i {
+    main i {
         font-size: 30px;
     }
-    .main img {
+    main img {
         width: 250px;
         height: 250px;
     }
 }
 @media (min-width: 1400px) {
-    .main img {
+    main img {
         width: 300px;
         height: 300px;
     }
