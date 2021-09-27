@@ -20,6 +20,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     list-style: none;
+    margin: 10px 0;
 }
 
 .navbar li{
@@ -29,6 +30,7 @@
 }
 
 .navbar a{
+    padding: 5px 20px;
     color: silver;
     transition: all .5s ease;
 }
@@ -46,9 +48,13 @@
 }
 
 /* Main */
-#home{
+.main{
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: silver;
     background: linear-gradient(80deg, #051205 7%, #5c6b73, silver 15%, #5c6b73 20%, #05121a 35%);
     min-height: 90vh;
     animation-name: lightning;
@@ -58,27 +64,23 @@
 }
 
 @keyframes lightning {
-    20% {
-        background: silver;
-    }
-    40% {
+    0% {
         background: #051205;
     }
-    55%  {  background: linear-gradient(80deg, #051205 7%, #5c6b73, silver 15%, #5c6b73 20%, #05121a 35%);
+    10%  {  background: linear-gradient(80deg, #051205 7%, #5c6b73, silver 15%, #5c6b73 20%, #05121a 35%);
     }
-}
-
-.main{
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
-    color: silver;
+    12% {
+        background: silver;
+    }
+    15% {
+        background: #051205;
+    }
+    75%  {  background: linear-gradient(80deg, #051205 7%, #5c6b73, silver 15%, #5c6b73 20%, #05121a 35%);
+    }
 }
 
 .headings {
-    padding: 10px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -103,24 +105,20 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     margin: 20px auto;
     }
-    .navbar ul li a{
+    .navbar a{
         padding: 5px 10px;
     }
-    .navbar ul li:last-child{
+    .navbar li:last-child{
         grid-column-start: 5;
         grid-column-end: 6;
     }
-    #home{
-        min-height: 95vh;
-    }
     .main{
+        min-height: 95vh;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
         color: silver;
-    }
-    .headings {
-        margin: 70px;
+        margin-bottom: 0;
     }
     .main img {
         width: 150px;
@@ -145,9 +143,6 @@
     }
 }
 @media (min-width: 992px) {
-    .headings {
-        margin: 120px;
-    }
     .main h1 {
         font-size: 80px;
     }
@@ -163,9 +158,6 @@
     }
 }
 @media (min-width: 1400px) {
-    .headings {
-        margin: 180px;
-    }
     .main img {
         width: 300px;
         height: 300px;
