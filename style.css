@@ -10,12 +10,12 @@
     align-items: center;
     background-color: #253237ee;
     position: sticky;
+    margin: auto;
 }
 .navbar ul{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     list-style: none;
-    margin: 10px 0px;
 }
 .navbar ul li{
     text-align: center;
@@ -23,12 +23,10 @@
     font-weight: bold;
 }
 .navbar ul li a{
-    text-decoration: none;
     color: silver;
-    padding: 5px 30px;
     transition: all .5s ease;
 }
-.navbar ul li a:hover{
+.navbar ul li a:hover, .navbar ul li a:focus{
     background-color: silver;
     color: #051205;
     box-shadow: 20px 20px 20px 0;
@@ -49,11 +47,13 @@
     animation-timing-function: jump-both;
 }
 @keyframes lightning {
-    50% {
+    20% {
+        background: silver;
+    }
+    40% {
         background: #051205;
     }
-    55% {
-        background: linear-gradient(80deg, #051205 7%, #5c6b73, silver 15%, #5c6b73 20%, #05121a 35%);
+    55%  {  background: linear-gradient(80deg, #051205 7%, #5c6b73, silver 15%, #5c6b73 20%, #05121a 35%);
     }
 }
 .main{
@@ -61,12 +61,13 @@
     flex-direction: column-reverse;
     justify-content: space-between;
     align-items: center;
+    margin: auto;
     color: silver;
 }
 .headings {
     padding: 10px;
-    margin-top: 100px;
-    margin-bottom: 40px;
+    /* margin-top: 100px;
+    margin-bottom: 40px; */
     text-align: center;
 }
 .main h1 {
@@ -81,7 +82,7 @@
 @media (min-width: 568px) {
     .navbar ul{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    margin: 20px 0;
+    margin: 20px auto;
     }
     .navbar ul li a{
         padding: 5px 10px;
@@ -95,12 +96,12 @@
     }
     .main{
         flex-direction: row;
-        justify-content: flex-end;
+        justify-content: space-evenly;
         align-items: center;
         color: silver;
     }
     .headings {
-        margin: 100px;
+        margin: 70px;
     }
     .main img {
         width: 150px;
@@ -110,9 +111,6 @@
     }
 }
 @media (min-width: 768px) {
-    .headings {
-        margin: 120px;
-    }
     .main h1 {
         font-size: 50px;
     }
@@ -129,7 +127,7 @@
 }
 @media (min-width: 992px) {
     .headings {
-        margin-top: 300px;
+        margin: 120px;
     }
     .main h1 {
         font-size: 80px;
@@ -141,7 +139,6 @@
         font-size: 30px;
     }
     .main img {
-        margin-top: 150px;
         width: 250px;
         height: 250px;
     }
