@@ -11,7 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #253237ee;
+    background-color: #05121add;
     position: sticky;
     margin: auto;
 }
@@ -37,7 +37,7 @@
 
 .navbar a:hover, 
 .navbar a:focus{
-    background-color: #05120577;
+    background-color: #05121a77;
     box-shadow: 20px 20px 20px 0;
     border-radius: 5%;
 }
@@ -55,7 +55,7 @@ main{
     align-items: center;
     margin: auto;
     color: silver;
-    background: linear-gradient(80deg, #051205 7%, #5c6b73, silver 15%, #5c6b73 20%, #05121a 35%);
+    background: linear-gradient(80deg, #05121a 7%, #5c6b73, silver 15%, #5c6b73 20%, #05121a 35%);
     min-height: 90vh;
     animation-name: lightning;
     animation-duration: 3s;
@@ -65,17 +65,17 @@ main{
 
 @keyframes lightning {
     0% {
-        background: #051205;
+        background: #05121a;
     }
-    10%  {  background: linear-gradient(80deg, #051205 7%, #5c6b73, silver 15%, #5c6b73 20%, #05121a 35%);
+    10%  {  background: linear-gradient(80deg, #05121a 7%, #5c6b73, silver 15%, #5c6b73 20%, #05121a 35%);
     }
     12% {
         background: silver;
     }
     15% {
-        background: #051205;
+        background: #05121a;
     }
-    75%  {  background: linear-gradient(80deg, #051205 7%, #5c6b73, silver 15%, #5c6b73 20%, #05121a 35%);
+    75%  {  background: linear-gradient(80deg, #05121a 7%, #5c6b73, silver 15%, #5c6b73 20%, #05121a 35%);
     }
 }
 
@@ -86,6 +86,10 @@ main .headings {
 
 main h1 {
     font-size: 34px;
+}
+
+main i {
+    font-size: 18px;
 }
 
 main img {
@@ -116,15 +120,7 @@ main img {
         min-height: 95vh;
         flex-direction: row;
         justify-content: space-evenly;
-        align-items: center;
-        color: silver;
         margin-bottom: 0;
-    }
-    main img {
-        width: 150px;
-        height: 150px;
-        box-shadow: 20px 20px 20px 0;
-        border-radius: 5%;
     }
 }
 @media (min-width: 768px) {
@@ -132,7 +128,7 @@ main img {
         font-size: 50px;
     }
     main h2 {
-        font-size: 30px;
+        font-size: 35px;
     }
     main i {
         font-size: 25px;
@@ -147,17 +143,27 @@ main img {
         font-size: 80px;
     }
     main h2 {
-        font-size: 50px;
+        font-size: 60px;
     }
     main i {
-        font-size: 30px;
+        font-size: 35px;
     }
     main img {
         width: 250px;
         height: 250px;
+        box-shadow: 40px 40px 40px 0;
     }
 }
 @media (min-width: 1400px) {
+    main h1 {
+        font-size: 90px;
+    }
+    main h2 {
+        font-size: 70px;
+    }
+    main i {
+        font-size: 45px;
+    }
     main img {
         width: 300px;
         height: 300px;
