@@ -8,11 +8,13 @@
 .dark {
     background: linear-gradient(80deg, #05121a 7%, #5c6b73, silver 15%, #5c6b73 20%, #05121a 35%);
     color: #f0f0f0;
+    min-height: 100vh;
 }
 
 .light {
-    background: linear-gradient(80deg, #05121a 1%, silver 15%);
+    background: linear-gradient(89deg, #05121a 1%, silver 15%);
     color: #05121a;
+    min-height: 100vh;
 }
 
 .container {
@@ -71,10 +73,9 @@ main{
     justify-content: center;
     align-items: center;
     margin: auto;
-    min-height: 100vh;
 }
 
-main .headings {
+main .heading {
     margin-bottom: 20px;
     text-align: center;
 }
@@ -133,9 +134,7 @@ main a:focus {
     box-shadow: 20px 20px 20px 0;
     border-radius: 15%;
 }
-#main-about-long {
-    min-height: 100vh;
-}
+
 #main-about-long .container {
     padding: 50px 5px 0 5px;
     border: 1px solid #05121a;
@@ -152,6 +151,114 @@ main a:focus {
     box-shadow: 5px 5px 5px 0;
     border-radius: 5%;
     float: right;
+}
+/* Skills Section */
+#skills {
+    background-image: url("Images/aurora.jpg");
+    background-size: cover;
+    background-position: top;
+}
+#skills h2 {
+    padding-top: 85px;
+    background: linear-gradient(186deg,#05121a 1%,#5c6b73, silver 35%, #5c6b73 55%, #05121a 70%);
+    color: #d5ffff;
+    text-align: center;
+    text-decoration: underline;
+}
+#skills .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 10px;
+    width: 100%;
+    background: linear-gradient(181deg, #c0c0c066 20%,  #d0d0d0ff);
+}
+
+#skills .container .skill-group {
+    width: 80%;
+    margin: auto;
+    font-size: 50px;
+    color: #d5ffff;
+}
+.skill-group .subheading {
+    border-top: 3px dashed #d5ffff;
+    border-bottom: 3px dashed #d5ffff;
+    font-weight: bold;
+    color: #05121a;
+    font-size: 1.5rem;
+}
+.skill-group ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.skill-group li {
+    flex-basis: 50%;
+}
+
+.skill-group .chrome-dt {
+    flex-basis: 100%;
+}
+
+#skills p {
+    font-size: 18px;
+    color: #05121a;
+}
+
+/* logo colors */
+.fa-html5 {
+    color: #e34c26;
+}
+.fa-css3-alt {
+    color: #264de4;
+}
+.fa-sass {
+    color: #CD6799;
+}
+.fa-bootstrap {
+    color: #563d7c;
+}
+.fa-js-square {
+    color: #f0db4f;
+}
+.fa-react {
+    color: #36dff8;
+    background-color: #00000011;
+    border-radius: 50%;
+}
+.fa-node-js {
+    color: #3c873a;
+}
+.devicons-mongodb {
+    background: linear-gradient(90deg, #4db33d 50%, #3fa037 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.fa-terminal {
+    color: #00000099;
+}
+.devicons-visualstudio {
+    color: #0078d7;
+}
+.fa-git-alt {
+    color: #f1502f;
+}
+.fa-github {
+    color: #1d202d;
+}
+.devicons-chrome {
+    color: #6eade9;
+}
+/* ----------------- */
+
+.devicons-mongodb ~ p {
+    background-color:#ffffff11;
+}
+.img-logo {
+    width: 50px;
+    height: 50px;
+    margin-top: 4px;
 }
 
 
@@ -199,6 +306,12 @@ main a:focus {
         float: remove;
         box-shadow: 10px 10px 10px 0;
     }
+    #skills h2 {
+        padding-top: 60px;
+    }
+    .devicons-mongodb ~ p {
+        background-color: none;
+    }
 }
 @media (min-width: 768px) {
     main h1 {
@@ -222,6 +335,7 @@ main a:focus {
         height: 180px;
     }
 }
+
 @media (min-width: 992px) {
     main h1 {
         font-size: 80px;
