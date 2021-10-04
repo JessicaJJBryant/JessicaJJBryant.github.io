@@ -310,7 +310,7 @@ main a:focus {
         padding-top: 60px;
     }
     .devicons-mongodb ~ p {
-        background-color: none;
+        background-color: transparent;
     }
 }
 @media (min-width: 768px) {
