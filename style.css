@@ -368,7 +368,7 @@ main a:focus {
         font-size: 3.1rem;
     }
     .fa-node-js {
-        background-color: rgba(238, 234, 234, 0.267);
+        background-color: rgb(241, 229, 229);
         border-radius: 30%;
     }
     #skills .container {
