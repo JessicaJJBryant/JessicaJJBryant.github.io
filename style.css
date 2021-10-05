@@ -33,6 +33,7 @@
     align-items: center;
     background-color: #05121a;
     position: fixed;
+    z-index: 2;
     margin: auto;
 }
 
@@ -156,10 +157,15 @@ main a:focus {
     background-image: url("Images/aurora.jpg");
     background-size: cover;
     background-position: top;
+    position: relative;
+    z-index: 0;
 }
-#skills::after {
-    background: linear-gradient(181deg, #c0c0c066 20%,  #d0d0d0ff);
-    z-index: 1;
+#skills::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(181deg, #c0c0c055 20%,  #d0d0d0aa);
+    z-index: -1;
 }
 #skills h2 {
     padding-top: 85px;
@@ -175,7 +181,6 @@ main a:focus {
     text-align: center;
     padding-top: 10px;
     width: 100%;
-    background: linear-gradient(181deg, #c0c0c066 20%,  #d0d0d0ff);
 }
 
 #skills .skill-group {
@@ -360,14 +365,14 @@ main a:focus {
         font-size: 2.1rem;
     }
     #skills p {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
     }
     #skills .skill-group {
         width: 80%;
         margin-top: 1rem;
         font-size: 3.1rem;
     }
-    .fa-node-js {
+    .fa-node-js, .devicons-chrome {
         background-color: rgb(241, 229, 229);
         border-radius: 30%;
     }
@@ -415,6 +420,16 @@ main a:focus {
         width: 200px;
         height: 200px;
     }
+    #skills h2 {
+        font-size: 2.5rem;
+    }
+    #skills h3 {
+        font-size: 2.3rem;
+    }
+    #skills p {
+        font-size: 2rem;
+    }
+    
 }
 @media (min-width: 1200px) {
     main h1 {
