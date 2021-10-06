@@ -157,16 +157,17 @@ main a:focus {
     background-image: url("Images/aurora.jpg");
     background-size: cover;
     background-position: top;
-    position: relative;
-    z-index: 0;
+    min-height: 100vh;
+    /* position: relative;
+    z-index: 0; */
 }
-#skills::before {
+/* #skills::before {
     content: '';
     position: absolute;
     inset: 0;
     background: linear-gradient(181deg, #c0c0c055 20%,  #d0d0d0aa);
     z-index: -1;
-}
+} */
 #skills h2 {
     padding-top: 85px;
     background: linear-gradient(186deg,#05121a 1%,#5c6b73, silver 35%, #5c6b7366 55%, #05121a99 70%);
@@ -194,7 +195,7 @@ main a:focus {
     margin: auto;
     border-top: 3px dashed #d5ffff;
     border-bottom: 3px dashed #d5ffff;
-    color: #05121a;
+    color: #f0f0f0;
     font-size: 1.5rem;
 }
 .skill-group ul {
@@ -212,7 +213,7 @@ main a:focus {
 
 #skills p {
     font-size: 1.2rem;
-    color: #05121a;
+    /* color: #05121a; */
 }
 
 /* logo colors */
@@ -221,6 +222,8 @@ main a:focus {
 }
 .fa-css3-alt {
     color: #264de4;
+    background-color: rgba(132, 218, 204, 0.5);
+    border-radius: 30%;
 }
 .fa-sass {
     color: #CD6799;
@@ -233,7 +236,7 @@ main a:focus {
 }
 .fa-react {
     color: #36dff8;
-    background-color: #00000011;
+    background-color: rgba(2, 41, 34, 0.5);
     border-radius: 50%;
 }
 .fa-node-js {
@@ -247,9 +250,12 @@ main a:focus {
 }
 .fa-terminal {
     color: #00000099;
+    background-color: rgba(132, 218, 204, 0.5);
 }
 .devicons-visualstudio {
     color: #0078d7;
+    background-color: rgba(132, 218, 204, 0.7);
+    border-radius: 50%;
 }
 .fa-git-alt {
     color: #f1502f;
@@ -259,23 +265,24 @@ main a:focus {
 }
 .devicons-chrome {
     color: #6eade9;
+    background-color: rgba(2, 41, 34, 0.5);
+    border-radius: 50%;
 }
 /* ----------------- */
 
-.devicons-mongodb ~ p {
-    background-color:#ffffff11;
-}
 .img-logo {
     width: 50px;
     height: 50px;
     margin-top: 4px;
+    background-color: rgba(132, 218, 204, 0.5);
+    border-radius: 40%;
 }
 /* WebProjects Section */
 #projects h2 {
     padding-top: 85px;
     background: linear-gradient(90deg,#05121a 1%,#5c6b73, silver 35%, #5c6b7366 55%, #05121a99 70%);
     color: #05121a;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
     text-decoration: underline;
 }
@@ -329,9 +336,6 @@ main a:focus {
         padding-top: 60px;
         font-size: 2rem;
     }
-    .devicons-mongodb ~ p {
-        background-color: transparent;
-    }
 }
 @media (min-width: 768px) {
     main h1 {
@@ -371,10 +375,6 @@ main a:focus {
         width: 80%;
         margin-top: 1rem;
         font-size: 3.1rem;
-    }
-    .fa-node-js, .devicons-chrome {
-        background-color: rgb(241, 229, 229);
-        border-radius: 30%;
     }
     #skills .container {
         grid-template-columns: 1fr 1fr;
