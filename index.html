@@ -19,8 +19,8 @@
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">WebProjects</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <!-- <li><a href="#experience">Experience</a></li> -->
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -31,7 +31,7 @@
             <br>
             <a href="aboutLong.html"> Click Here for My About Essay</a>
             <br>
-            <p>Scroll Down for Skills</p>
+            <p>Scroll Down to see my Skills</p>
         </div>
         <div class="heading">
             <h1>JJ BRYANT</h1>
@@ -40,32 +40,32 @@
         </div>
     </main>
     <section id="skills">
-        <h2>Skills</h2>
+        <h2>+Skills+</h2>
         <div class="container">
             <div class="skill-group">
                 <h3 class="subheading">Front End</h3>
                 <ul>
-                    <li>
+                    <li class="list-fe">
                         <i class="fab fa-html5"></i>
                         <p>HTML</p>
                     </li>
-                    <li>
+                    <li class="list-fe">
                         <i class="fab fa-css3-alt"></i>
                         <p>CSS</p>
                     </li>
-                    <li>
+                    <li class="list-fe">
                         <i class="fab fa-sass"></i>
                         <p>SASS</p>
                     </li>
-                    <li>
+                    <li class="list-fe">
                         <i class="fab fa-bootstrap"></i>
                         <p>Bootstrap</p>
                     </li>
-                    <li>
+                    <li class="list-fe">
                         <i class="fab fa-js-square"></i>
                         <p>JavaScript</p>
                     </li>
-                    <li id="react">
+                    <li class="list-fe" id="react">
                         <i class="fab fa-react"></i>
                         <p>React</p>
                     </li>
@@ -74,19 +74,19 @@
             <div class="skill-group">
                 <h3 class="subheading">Back End</h3>
                 <ul>
-                    <li>
+                    <li class="list-be">
                         <p id="axios-logo"><img class="img-logo" src="Images/axiosLogo.jpg" alt="Axios Logo"></p>
                         <p>Axios</p>
                     </li>
-                    <li>
+                    <li class="list-be">
                         <i class="fab fa-node-js"></i>
                         <p>Node.js</p>
                     </li>
-                    <li>
+                    <li class="list-be">
                         <p><img class="img-logo" src="Images/expressLogo.png" alt="Express Logo"></p>
                         <p>Express</p>
                     </li>
-                    <li>
+                    <li class="list-be">
                         <i class="devicons devicons-mongodb"></i>
                         <p>MongoDB</p>
                     </li>
@@ -95,23 +95,23 @@
             <div class="skill-group">
                 <h3 class="subheading">Misc</h3>
                 <ul>
-                    <li>
+                    <li class="list-misc">
                         <i class="fas fa-terminal"></i>
                         <p>Terminal</p>
                     </li>
-                    <li>
+                    <li class="list-misc">
                         <i class="devicons devicons-visualstudio"></i>
                         <p>VSCode</p>
                     </li>
-                    <li>
+                    <li class="list-misc">
                         <i class="fab fa-git-alt"></i>
                         <p>Git</p>
                     </li>
-                    <li>
+                    <li class="list-misc" id="github">
                         <i class="fab fa-github"></i>
                         <p>GitHub</p>
                     </li>
-                    <li class="chrome-dt">
+                    <li class="list-misc" id="chrome-dt">
                         <i class="devicons devicons-chrome"></i>
                         <p>Chrome DevTools</p>
                     </li>
@@ -121,10 +121,51 @@
             </li> -->
                 </ul>
             </div>
-        </div>
+            <div class="skill-group">
+                <h3 class="subheading">Scroll Down to see my Projects</h3>
+            </div>
     </section>
     <section id="projects">
-        <h2>Web Projects</h2>
+        <h2>+Projects+</h2>
+        <div class="container">
+
+        </div>
+    </section>
+    <section id="contact" class="dark">
+        <div class="container">
+            <h2>+Contact Info+</h2>
+            <h3>I'd love to speak to you about any position where I'd be a good asset to your company.</h3>
+            <ul>
+                <li>
+                    <i class="far fa-envelope"><a href="mailto: jessica.bryant@live.com"> jessica.bryant@live.com</a></i>
+                </li>
+                <li>
+                    <i class="fab fa-linkedin"><a href="linkedin.com/in/jessicajjbryant"> linkedin.com/in/jessicajjbryant</a></i>
+                </li>
+                <li>
+                    <i class="fab fa-github-square"><a href="github.com/jessicajjbryant"> github.com/jessicajjbryant</a></i>
+                </li>
+                <li>
+                    <i class="far fa-file"><a href="resume.pdf">  Click Here to view my Resume </a></i>
+                </li>
+            </ul>
+            <form action="https://formsubmit.co/jessica.bryant@live.com" method="POST" id="form">
+                <label for="Email">If you'd like to pass me a note:</label>
+                <br>
+                <input type="name" name="name" placeholder="Name" required>
+                <input type="email" name="email" id="Email" placeholder="EmailEmail@Email" required>
+                <br>
+                <textarea name="message" placeholder="Write your good vibes here..." rows=7 required></textarea>
+                <br>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <footer>
+            <p>Aurora Borealis Photo by <a href="https://unsplash.com/photos/5Qqkjn4PFPA">Luke Stackpoole</a></p>
+            <p>Night Sky Photo by <a href="https://unsplash.com/photos/oMpAz-DN-9I">Greg Rakozy</a> (both on Unsplash)
+            </p>
+            <p id="copy">Copyright &copy; 2021, <a href="https://jessicajjbryant.github.io/">Jessica JJ Bryant</a></p>
+        </footer>
     </section>
 </body>
 

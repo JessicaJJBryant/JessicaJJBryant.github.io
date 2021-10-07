@@ -5,24 +5,28 @@
     font-family: sans-serif;
     font-weight: bold;
 }
-
 .dark {
     background: linear-gradient(80deg, #05121a 7%, #5c6b73, silver 15%, #5c6b73 20%, #05121a 35%);
     color: #f0f0f0;
-    min-height: 100vh;
 }
 
-.light {
+/* .light {
     background: linear-gradient(89deg, #05121a 1%, silver 15%);
     color: #05121a;
     min-height: 100vh;
+} */
+section h2 {
+    padding-top: 65px;
+    padding-bottom: 10px;
+    color: #f0f0f0;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: underline;
 }
-
 .container {
     width: 80%;
     margin: auto;
 }
-
 
 /* Navigation Bar */
 
@@ -62,13 +66,14 @@
     border-radius: 15%;
 }
 
-.navbar li:last-child{
+/* .navbar li:last-child{
     grid-column-start: 1;
     grid-column-end: 3;
-}
+} */
 
 /* Main */
 main{
+    min-height: 100vh;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
@@ -158,35 +163,16 @@ main a:focus {
     background-size: cover;
     background-position: top;
     min-height: 100vh;
-    /* position: relative;
-    z-index: 0; */
-}
-/* #skills::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(181deg, #c0c0c055 20%,  #d0d0d0aa);
-    z-index: -1;
-} */
-#skills h2 {
-    padding-top: 85px;
-    background: linear-gradient(186deg,#05121a 1%,#5c6b73, silver 35%, #5c6b7366 55%, #05121a99 70%);
-    color: #d5ffff;
-    font-size: 1.5rem;
-    text-align: center;
-    text-decoration: underline;
 }
 #skills .container {
     display: grid;
     grid-template-columns: 100%;
     text-align: center;
-    padding-top: 10px;
     width: 100%;
+    padding-bottom: 10px;
 }
-
 #skills .skill-group {
-    width: 80%;
-    margin: auto;
+    margin: 5px;
     font-size: 3.1rem;
     color: #d5ffff;
 }
@@ -198,6 +184,9 @@ main a:focus {
     color: #f0f0f0;
     font-size: 1.5rem;
 }
+.skill-group .subheading:last-child {
+    font-size: 1rem;
+}
 .skill-group ul {
     display: flex;
     flex-wrap: wrap;
@@ -206,16 +195,12 @@ main a:focus {
 .skill-group li {
     flex: 1 1 50%;
 }
-
-.skill-group .chrome-dt {
+.skill-group #chrome-dt {
     flex-basis: 100%;
 }
-
 #skills p {
     font-size: 1.2rem;
-    /* color: #05121a; */
 }
-
 /* logo colors */
 .fa-html5 {
     color: #e34c26;
@@ -230,6 +215,8 @@ main a:focus {
 }
 .fa-bootstrap {
     color: #563d7c;
+    background-color: rgba(132, 218, 204, 0.5);
+    border-radius: 30%;
 }
 .fa-js-square {
     color: #f0db4f;
@@ -241,6 +228,8 @@ main a:focus {
 }
 .fa-node-js {
     color: #3c873a;
+    background-color: rgba(132, 218, 204, 0.7);
+    border-radius: 50%;
 }
 .devicons-mongodb {
     background: linear-gradient(90deg, #4db33d 50%, #3fa037 50%);
@@ -251,6 +240,7 @@ main a:focus {
 .fa-terminal {
     color: #00000099;
     background-color: rgba(132, 218, 204, 0.5);
+    border-radius: 20%;
 }
 .devicons-visualstudio {
     color: #0078d7;
@@ -262,6 +252,8 @@ main a:focus {
 }
 .fa-github {
     color: #1d202d;
+    background-color: rgba(132, 218, 204, 0.7);
+    border-radius: 50%;
 }
 .devicons-chrome {
     color: #6eade9;
@@ -278,35 +270,64 @@ main a:focus {
     border-radius: 40%;
 }
 /* WebProjects Section */
-#projects h2 {
-    padding-top: 85px;
-    background: linear-gradient(90deg,#05121a 1%,#5c6b73, silver 35%, #5c6b7366 55%, #05121a99 70%);
-    color: #05121a;
-    font-size: 2rem;
+#projects {
+    background-image: url("Images/pastelStars.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+/* Contact Section */
+#contact .container {
     text-align: center;
-    text-decoration: underline;
+}
+#contact ul {
+    list-style: none;
+}
+#contact li {
+    font-size: 1.5rem;
+    margin: 5px;
+}
+#contact li a {
+    font-size: 1rem;
+    color: #d5ffff;
+}
+label {
+    color: #f0f0f0;
+    font-size: 1.1rem;
+}
+textarea {
+    width: 70%;
+}
+footer {
+    background: linear-gradient(80deg, #f0f0f0, #d5ffff, #f0f0f0);
+    color: #05121a;
+    text-align: center;
+    margin-top: 50px;
+}
+footer a {
+    color:rgb(4, 82, 69)
 }
 
 /* Media Queries (mobile first) */
 @media (min-width: 568px) {
+    section h2 {
+        padding-top: 60px;
+    }
     .navbar ul{
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 20px auto;
     }
     .navbar a{
         padding: 5px 10px;
     }
-    .navbar li:last-child{
+    /* .navbar li:last-child{
         grid-column-start: 5;
         grid-column-end: 6;
-    }
+    } */
     main{
         flex-direction: row;
         gap: 2.5rem;
         justify-content: center;
-    }
-    main .headings {
-        width: 55%;
     }
     #summary {
         margin-left: 5em;
@@ -332,12 +353,32 @@ main a:focus {
         float: remove;
         box-shadow: 10px 10px 10px 0;
     }
-    #skills h2 {
-        padding-top: 60px;
+    .skill-group:first-child li,
+    .skill-group:last-child li {
+        flex: 1 1 33%;
+    }
+    .skill-group #chrome-dt {
+        flex-basis: 33%;
+    } 
+    #contact h3 {
+        font-size: 1.4rem;
+    }
+    #contact li {
         font-size: 2rem;
+        margin: 5px;
+    }
+    #contact li a {
+        font-size: 1.4rem;
+        color: #d5ffff;
+    }
+    label {
+        font-size: 1.5rem;
     }
 }
 @media (min-width: 768px) {
+    section h2 {
+        font-size: 2.2rem;
+    }
     main h1 {
         font-size: 3rem;
     }
@@ -347,12 +388,9 @@ main a:focus {
     main i {
         font-size: 1.4rem;
     }
-    main .headings {
-        width: 60%;
-    }
     #summary {
         margin-left: 4em;
-        width: 40%;
+        width: 35%;
     }
     #main-about-long .container {
         margin: 70px, 70px;
@@ -362,34 +400,21 @@ main a:focus {
         width: 180px;
         height: 180px;
     }
-    #skills h2 {
-        font-size: 2.3rem;
-    }
     #skills h3 {
-        font-size: 2.1rem;
-    }
-    #skills p {
         font-size: 1.8rem;
     }
-    #skills .skill-group {
-        width: 80%;
-        margin-top: 1rem;
-        font-size: 3.1rem;
+    #skills p {
+        font-size: 1.5rem;
     }
-    #skills .container {
-        grid-template-columns: 1fr 1fr;
-    }
-    #skills .container .skill-group:last-child {
-        grid-column-start: 1;
-        grid-column-end: 3;
+    #contact h3 {
+        width: 60%;
         margin: auto;
     }
-    #react {
-        margin-bottom: 2rem;
-    }
 }                                                         
-
 @media (min-width: 992px) {
+    section h2 {
+        font-size: 2.5rem;
+    }
     main h1 {
         font-size: 3.3rem;
     }
@@ -399,15 +424,11 @@ main a:focus {
     main i {
         font-size: 1.5rem;
     }
-    main .headings {
-        width: 60%;
-    }
     #summary {
         font-size: 1.1rem;
-        margin-left: 4em;
+        margin-left: 8em;
         box-shadow: 25px 25px 25px 0;
     }
-
     #main-about-long .container {
         grid-gap: 20px;
         margin: 100px, 100px;
@@ -420,20 +441,23 @@ main a:focus {
         width: 200px;
         height: 200px;
     }
-    #skills h2 {
-        font-size: 2.5rem;
-    }
     #skills h3 {
-        font-size: 2.3rem;
-    }
-    #skills p {
         font-size: 2rem;
     }
-    
+    #skills p {
+        font-size: 1.8rem;
+    }
+    #skills .container {
+    grid-template-columns: 60% 40%;
+    }
+    #skills .container .skill-group:nth-child(3),
+    #skills .container .skill-group:nth-child(4) {
+        grid-column: 1/3;
+    }
 }
 @media (min-width: 1200px) {
     main h1 {
-        font-size: 3.7rem;
+        font-size: 3.8rem;
     }
     main h2 {
         font-size: 2.6rem;
@@ -441,12 +465,9 @@ main a:focus {
     main i {
         font-size: 1.8rem;
     }
-    main .headings {
-        width: 60%;
-    }
     #summary {
-        margin-left: 4em;
-        width: 40%;
+        margin-left: 10em;
+        width: 30%;
         font-size: 1.2rem;
     }
     #main-about-long .container {
@@ -469,8 +490,7 @@ main a:focus {
         font-size: 2rem;
     }
     #summary {
-        margin-left: 7em;
-        width: 40%;
+        margin-left: 12em;
         font-size: 1.7rem;
     }
     #main-about-long .container {
