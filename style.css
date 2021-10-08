@@ -319,8 +319,6 @@ main a:focus {
     right: -1rem;
 }
 .carousel_nav {
-    background: rgba(132, 218, 204, 0.5);
-    border-radius: 10%;
     display: flex;
     justify-content: center;
     padding: 10px 0;
@@ -421,6 +419,11 @@ footer a {
     .skill-group #chrome-dt {
         flex-basis: 33%;
     } 
+    .carousel {
+        height: 6rem;
+        width: 10rem;
+        margin-top: 0px;
+    }
     #contact h3 {
         font-size: 1.4rem;
     }
@@ -467,11 +470,23 @@ footer a {
     #skills p {
         font-size: 1.5rem;
     }
+    .carousel {
+        height: 10rem;
+        width: 16rem;
+    }
     #contact h3 {
         width: 60%;
         margin: auto;
     }
-}                                                         
+} 
+@media (min-width: 768px) and (orientation: portrait) {   
+    .carousel {
+        height: 20rem;
+        width: 32rem;
+        margin-top: 5rem;
+    }
+}  
+
 @media (min-width: 992px) {
     section h2 {
         font-size: 2.5rem;
@@ -515,6 +530,11 @@ footer a {
     #skills .container .skill-group:nth-child(4) {
         grid-column: 1/3;
     }
+    .carousel {
+        height: 15rem;
+        width: 24rem;
+        margin-top: 3rem;
+    }
 }
 @media (min-width: 1200px) {
     main h1 {
@@ -539,6 +559,11 @@ footer a {
         width: 250px;
         height: 250px;
     }
+    .carousel {
+        height: 20rem;
+        width: 32rem;
+        margin-top: 3rem;
+    }
 }
 @media (min-width: 1400px) {
     main h1 {
@@ -561,5 +586,10 @@ footer a {
     #main-about-long img {
         width: 300px;
         height: 300px;
+    }
+    .carousel {
+        height: 25rem;
+        width: 40rem;
+        margin-top: 5rem;
     }
 }
