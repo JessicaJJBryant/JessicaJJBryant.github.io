@@ -716,8 +716,8 @@ footer a {
 }
 @media (min-width: 2000px) {
     .carousel {
-        height: 35rem;
-        width: 56rem;
+        height: 40rem;
+        width: 64rem;
         margin-top: 5rem;
     }
 }
