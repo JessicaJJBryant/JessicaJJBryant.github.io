@@ -27,6 +27,25 @@ section h2 {
     width: 80%;
     margin: auto;
 }
+a {
+    position: relative;
+    transition: all .5s ease;
+}
+a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    box-shadow: 20px 20px 20px 0;
+    transition: opacity 500ms ease;
+}
+a:hover::after, 
+a:focus::after {
+    opacity: 1;
+}
 
 /* Navigation Bar */
 
@@ -56,20 +75,30 @@ section h2 {
 .navbar a{
     padding: 5px 20px;
     color: #f0f0f0;
-    transition: all .5s ease;
 }
-
-.navbar a:hover, 
+/* This that's commented out first is one way to do box-shadows on hover, but a better way is to set the element's position to relative and do a pseudo element of after and adjust the opacity on the hover/focus (also commented out below). Although it is more lines of code, opacity doesn't require the page to be re-rendered & re-painted (so performance is better). Also, I want to do this to all of my links, so I'm going to comment most of this out here and refactor it in my global selectors way above.   */
+/* .navbar a:hover, 
 .navbar a:focus{
     background-color: #05121a77;
     box-shadow: 20px 20px 20px 0;
     border-radius: 15%;
-}
-
-/* .navbar li:last-child{
-    grid-column-start: 1;
-    grid-column-end: 3;
 } */
+/* .navbar a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    box-shadow: 20px 20px 20px 0;
+    transition: opacity 500ms ease;
+}
+.navbar a:hover::after, 
+.navbar a:focus::after {
+    opacity: 1;
+} */
+
 
 /* Main */
 main{
