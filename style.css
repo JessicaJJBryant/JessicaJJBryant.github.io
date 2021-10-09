@@ -697,7 +697,7 @@ footer a {
     .carousel {
         height: 25rem;
         width: 40rem;
-        margin-top: 1rem;
+        margin-top: 2rem;
     }
     .carousel_image-caption {
         font-size: 1.5rem;
@@ -705,5 +705,11 @@ footer a {
     .carousel_image-caption:hover,
     .carousel_image-caption:focus {
         font-size: 1.8rem;
+    }
+}
+@media (min-width: 1600) {
+    .carousel {
+        height: 30rem;
+        width: 48rem;
     }
 }
