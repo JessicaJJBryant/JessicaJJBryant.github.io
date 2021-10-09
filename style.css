@@ -714,3 +714,10 @@ footer a {
         margin-top: 4rem;
     }
 }
+@media (min-width: 2000px) {
+    .carousel {
+        height: 35rem;
+        width: 56rem;
+        margin-top: 5rem;
+    }
+}
