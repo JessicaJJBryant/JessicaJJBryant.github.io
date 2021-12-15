@@ -317,7 +317,7 @@ main a:focus {
 #projects {
     background-image: url("Images/pastelStars.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     min-height: 100vh;
 }
 .carousel {
@@ -353,6 +353,9 @@ main a:focus {
     height: 100%;
     object-fit: cover;
     border: 5px solid rgb(1, 46, 38);
+}
+#carousel_image-caption-dailydeed {
+    color:rgb(16, 88, 75);
 }
 .carousel_image-caption {
     position: absolute;
