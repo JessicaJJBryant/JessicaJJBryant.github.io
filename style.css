@@ -76,7 +76,7 @@ a:focus::after {
     padding: 5px 20px;
     color: #f0f0f0;
 }
-/* This that's commented out first is one way to do box-shadows on hover, but a better way is to set the element's position to relative and do a pseudo element of after and adjust the opacity on the hover/focus (also commented out below). Although it is more lines of code, opacity doesn't require the page to be re-rendered & re-painted (so performance is better). Also, I want to do this to all of my links, so I'm going to comment most of this out here and refactor it in my global selectors way above.   */
+/* This that's commented out first is one way to do box-shadows on hover, but a better way learned from Kevin Powell on YouTube is to set the element's position to relative and do a pseudo element of after and adjust the opacity on the hover/focus (also commented out below). Although it is more lines of code, opacity doesn't require the page to be re-rendered & re-painted (so performance is better). Also, I want to do this to all of my links, so I'm going to comment most of this out here and refactor it in my global selectors way above.   */
 /* .navbar a:hover, 
 .navbar a:focus{
     background-color: #05121a77;
